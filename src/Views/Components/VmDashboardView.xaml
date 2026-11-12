@@ -669,7 +669,7 @@
                     </Grid>
             </ui:Card>
 
-            <!-- 时空 (Spacetime / Snapshots) 卡片 -->
+            <!-- 检查点 (Checkpoint / Snapshots) 卡片 -->
             <ui:Card Margin="0,0,0,8" Padding="14,16,14,16">
                     <Grid MinHeight="38" Margin="8,0,12,0">
                         <Grid.ColumnDefinitions>

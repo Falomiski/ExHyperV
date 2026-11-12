@@ -2479,37 +2479,37 @@
     <value>系统内置引导项</value>
   </data>
   <data name="VmSpacetimeService_NodeLabelOrigin" xml:space="preserve">
-    <value>起源</value>
+    <value>根检查点</value>
   </data>
   <data name="VmSpacetimeService_NodeLabelCurrent" xml:space="preserve">
-    <value>当前</value>
+    <value>现在</value>
   </data>
   <data name="VmSpacetimeService_ErrLookupFailed" xml:space="preserve">
-    <value>时空检索失败: {0}</value>
+    <value>检查点检索失败: {0}</value>
   </data>
   <data name="VmSpacetimeService_LogWormholeDisk" xml:space="preserve">
-    <value>[Wormhole] 虫洞盘: {0}</value>
+    <value>[Mount] 挂载的检查点磁盘: {0}</value>
   </data>
   <data name="VmSpacetimeService_LogWormholeMarkedOk" xml:space="preserve">
-    <value>[Wormhole] 标记成功: {0}</value>
+    <value>[Mount] 标记成功: {0}</value>
   </data>
   <data name="VmSpacetimeService_LogWormholeDetectFailed" xml:space="preserve">
-    <value>[Wormhole] 检测失败: {0}</value>
+    <value>[Mount] 检测失败: {0}</value>
   </data>
   <data name="VmSpacetimeService_ErrWormholeAlreadyExists" xml:space="preserve">
-    <value>当前时空中已存在虫洞，请先关闭现有虫洞后再开启新的，否则将引发时空悖论</value>
+    <value>当前已有检查点磁盘挂载，请先卸载现有磁盘再挂载新的，否则将导致冲突</value>
   </data>
   <data name="VmSpacetimeService_ErrParentChainNode" xml:space="preserve">
-    <value>该节点是当前时空的父链节点，开启虫洞会导致时空悖论</value>
+    <value>该检查点是当前状态的父节点，挂载其磁盘会导致冲突</value>
   </data>
   <data name="VmSpacetimeService_ErrOnlySnapshotNode" xml:space="preserve">
-    <value>只能对快照节点开启虫洞</value>
+    <value>只能对检查点节点挂载磁盘</value>
   </data>
   <data name="VmSpacetimeService_ErrSnapshotPathInvalid" xml:space="preserve">
-    <value>快照磁盘路径无效</value>
+    <value>检查点磁盘路径无效</value>
   </data>
   <data name="VmSpacetimeService_ErrNodeHasWormhole" xml:space="preserve">
-    <value>该节点已有虫洞开启中</value>
+    <value>该检查点磁盘已挂载</value>
   </data>
   <data name="VmSpacetimeService_ErrCannotDetermineDiskDir" xml:space="preserve">
     <value>无法确定磁盘目录</value>
@@ -2521,19 +2521,19 @@
     <value>创建临时差分盘失败: {0}</value>
   </data>
   <data name="VmSpacetimeService_MsgWormholeOpened" xml:space="preserve">
-    <value>虫洞已开启</value>
+    <value>检查点磁盘已挂载</value>
   </data>
   <data name="VmSpacetimeService_ErrSpacetimeException" xml:space="preserve">
-    <value>时空异常: {0}</value>
+    <value>检查点磁盘异常: {0}</value>
   </data>
   <data name="VmSpacetimeService_ErrNoActiveWormhole" xml:space="preserve">
-    <value>该节点没有开启虫洞</value>
+    <value>该检查点未挂载磁盘</value>
   </data>
   <data name="VmSpacetimeService_MsgWormholeClosed" xml:space="preserve">
-    <value>虫洞已关闭，时间线恢复正常</value>
+    <value>检查点磁盘已卸载</value>
   </data>
   <data name="VmSpacetimeService_ErrCloseWormholeException" xml:space="preserve">
-    <value>关闭虫洞异常: {0}</value>
+    <value>卸载检查点磁盘异常: {0}</value>
   </data>
   <data name="VmSpacetimeService_ErrWmiMgmtSvcNotFound" xml:space="preserve">
     <value>找不到 WMI 管理服务</value>
@@ -2548,46 +2548,46 @@
     <value>重命名服务异常: {0}</value>
   </data>
   <data name="VmSpacetimeService_ErrOnlyHistoricalNode" xml:space="preserve">
-    <value>只能穿梭至历史快照点</value>
+    <value>只能应用历史检查点</value>
   </data>
   <data name="VmSpacetimeService_MsgTravelInitiated" xml:space="preserve">
-    <value>穿梭已启动，正在恢复运行状态...</value>
+    <value>正在应用检查点，正在恢复运行状态...</value>
   </data>
   <data name="VmSpacetimeService_MsgTravelSucceeded" xml:space="preserve">
-    <value>穿梭成功，虚拟机已回到指定时空点（已关机）</value>
+    <value>已应用检查点，虚拟机已还原到指定检查点（已关机）</value>
   </data>
   <data name="VmSpacetimeService_ErrTravelFailed" xml:space="preserve">
-    <value>穿梭失败: {0}</value>
+    <value>应用检查点失败: {0}</value>
   </data>
   <data name="VmSpacetimeService_ErrVmCarrierNotFound" xml:space="preserve">
     <value>找不到指定的虚拟机载体</value>
   </data>
   <data name="VmSpacetimeService_ErrSpacetimeCollapse" xml:space="preserve">
-    <value>时空塌陷: {0}</value>
+    <value>创建检查点失败: {0}</value>
   </data>
   <data name="VmSpacetimeService_MsgAnchorSet" xml:space="preserve">
-    <value>时空锚点已锚定</value>
+    <value>检查点已创建</value>
   </data>
   <data name="VmSpacetimeService_ErrOriginCurrentNoAnnihilate" xml:space="preserve">
-    <value>起源与当前节点不可湮灭</value>
+    <value>根检查点与当前节点不可删除</value>
   </data>
   <data name="VmSpacetimeService_MsgAnnihilated" xml:space="preserve">
-    <value>时空分支已彻底湮灭</value>
+    <value>检查点子树已删除</value>
   </data>
   <data name="VmSpacetimeService_ErrAnnihilateFailed" xml:space="preserve">
-    <value>湮灭失败: {0}</value>
+    <value>删除检查点子树失败: {0}</value>
   </data>
   <data name="VmSpacetimeService_ErrOriginCurrentNoConverge" xml:space="preserve">
-    <value>起源与当前节点不可收束</value>
+    <value>根检查点与当前节点不可删除</value>
   </data>
   <data name="VmSpacetimeService_MsgConverging" xml:space="preserve">
-    <value>时空收束中...</value>
+    <value>正在删除检查点...</value>
   </data>
   <data name="VmSpacetimeService_ErrConvergeFailed" xml:space="preserve">
-    <value>收束失败: {0}</value>
+    <value>删除检查点失败: {0}</value>
   </data>
   <data name="VmSpacetimeService_LogReadCheckpointFailed" xml:space="preserve">
-    <value>[Spacetime] 读取检查点状态失败: {0}</value>
+    <value>[Checkpoint] 读取检查点状态失败: {0}</value>
   </data>
   <data name="VmSpacetimeService_ErrVmNotFound" xml:space="preserve">
     <value>找不到虚拟机</value>
@@ -2605,10 +2605,10 @@
     <value>操作异常: {0}</value>
   </data>
   <data name="VmSpacetimeService_LogSnapshotScreenCleaned" xml:space="preserve">
-    <value>[Spacetime] 已清理快照截图: {0}</value>
+    <value>[Checkpoint] 已清理检查点截图: {0}</value>
   </data>
   <data name="VmSpacetimeService_LogCleanScreenFailed" xml:space="preserve">
-    <value>[Spacetime] 清理截图失败: {0}</value>
+    <value>[Checkpoint] 清理检查点截图失败: {0}</value>
   </data>
   <data name="VmMmio_LogFinalResult" xml:space="preserve">
     <value>[MMIO] 最终计算结果:</value>
@@ -2728,28 +2728,28 @@
     <value>检索失败</value>
   </data>
   <data name="VmPage_MsgSpacetimeCreated2" xml:space="preserve">
-    <value>已成功创建时空</value>
+    <value>检查点已创建</value>
   </data>
   <data name="VmPage_MsgTraveledTo2" xml:space="preserve">
-    <value>已穿梭至时空：{0}</value>
+    <value>已应用检查点：{0}</value>
   </data>
   <data name="VmPage_MsgSpacetimeAnnihilated2" xml:space="preserve">
-    <value>该时空已湮灭</value>
+    <value>检查点子树已删除</value>
   </data>
   <data name="VmPage_MsgConnectedTo2" xml:space="preserve">
-    <value>已连接到时空「{0}」</value>
+    <value>检查点磁盘已挂载：{0}</value>
   </data>
   <data name="VmPage_ErrOpenFailed4" xml:space="preserve">
-    <value>开启失败</value>
+    <value>挂载失败</value>
   </data>
   <data name="VmPage_MsgTimelineRestored2" xml:space="preserve">
-    <value>时间线已恢复正常</value>
+    <value>检查点磁盘已卸载</value>
   </data>
   <data name="VmPage_ErrCloseFailed2" xml:space="preserve">
-    <value>关闭失败</value>
+    <value>卸载失败</value>
   </data>
   <data name="VmPage_MsgSpacetimeConverged2" xml:space="preserve">
-    <value>时空已收束至上一节点</value>
+    <value>检查点已删除并合并至父节点</value>
   </data>
   <data name="VmPage_MsgRollingBackGpu2" xml:space="preserve">
     <value>正在回滚 GPU 分配...</value>
@@ -2788,10 +2788,10 @@
     <value>引导顺序与设备列表</value>
   </data>
   <data name="VmDashboard_DescSpacetime" xml:space="preserve">
-    <value>时空</value>
+    <value>检查点</value>
   </data>
   <data name="VmDashboardView_SnapshotAndSpacetime" xml:space="preserve">
-    <value>快照管理与时空穿梭</value>
+    <value>快照管理与检查点</value>
   </data>
   <data name="VmRAMSettings_LabelMemMappingMode" xml:space="preserve">
     <value>内存映射模式</value>
@@ -2902,7 +2902,7 @@
     <value>允许使用 GPA 固定功能</value>
   </data>
   <data name="VmSpacetimeSettings_TitleMgmt" xml:space="preserve">
-    <value>时空管理</value>
+    <value>检查点</value>
   </data>
   <data name="VmSpacetimeSettings_LabelCheckpoint" xml:space="preserve">
     <value>检查点</value>
@@ -2914,49 +2914,49 @@
     <value>同步中...</value>
   </data>
   <data name="VmSpacetimeSettings_LabelDetails" xml:space="preserve">
-    <value>时空详情</value>
+    <value>检查点详情</value>
   </data>
   <data name="VmSpacetimeSettings_MsgNoAnchor" xml:space="preserve">
-    <value>未选择锚点</value>
+    <value>未选择检查点</value>
   </data>
   <data name="VmSpacetimeSettings_LabelAction" xml:space="preserve">
     <value>操作</value>
   </data>
   <data name="VmSpacetimeSettings_TypeContinuous" xml:space="preserve">
-    <value>连续时空</value>
+    <value>标准检查点</value>
   </data>
   <data name="VmSpacetimeSettings_DescContinuous" xml:space="preserve">
     <value>保存磁盘和内存状态</value>
   </data>
   <data name="VmSpacetimeSettings_TypeStatic" xml:space="preserve">
-    <value>静止时空</value>
+    <value>生产检查点</value>
   </data>
   <data name="VmSpacetimeSettings_DescStatic" xml:space="preserve">
     <value>保存磁盘状态</value>
   </data>
   <data name="VmSpacetimeSettings_BtnCreate" xml:space="preserve">
-    <value>创建时空</value>
+    <value>创建检查点</value>
   </data>
   <data name="VmSpacetimeSettings_StateWormholeActive" xml:space="preserve">
-    <value>虫洞干涉中</value>
+    <value>检查点磁盘已挂载</value>
   </data>
   <data name="VmSpacetimeSettings_BtnCloseWormhole" xml:space="preserve">
-    <value>关闭虫洞</value>
+    <value>卸载检查点磁盘</value>
   </data>
   <data name="VmSpacetimeSettings_BtnTravel" xml:space="preserve">
-    <value>穿梭</value>
+    <value>应用检查点</value>
   </data>
   <data name="VmSpacetimeSettings_BtnOpenWormhole" xml:space="preserve">
-    <value>开启虫洞</value>
+    <value>挂载检查点磁盘</value>
   </data>
   <data name="VmSpacetimeSettings_BtnConverge" xml:space="preserve">
-    <value>时空收束</value>
+    <value>删除检查点</value>
   </data>
   <data name="VmSpacetimeSettings_BtnDelete" xml:space="preserve">
-    <value>删除</value>
+    <value>删除检查点子树</value>
   </data>
   <data name="VmSpacetimeSettings_DlgExportTitle" xml:space="preserve">
-    <value>导出时空拓扑图</value>
+    <value>导出检查点拓扑图</value>
   </data>
   <data name="VmSpacetimeSettings_DlgExportFilter" xml:space="preserve">
     <value>PNG 图片|*.png</value>
@@ -3169,7 +3169,7 @@
     <value>错误：{0}</value>
   </data>
   <data name="VmSpacetimeSettings_HintCloseWormholeFirst" xml:space="preserve">
-    <value>虫洞开启中，需先关闭虫洞才能创建 / 删除 / 收束时空。</value>
+    <value>检查点磁盘挂载中，需先卸载才能创建 / 删除 / 合并检查点。</value>
   </data>
   <data name="Cpu_ApicMode" xml:space="preserve">
     <value>APIC 模式</value>

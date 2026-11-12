@@ -2479,37 +2479,37 @@ The existing NAT switch is: '{0}'</value>
     <value>System Built-in Boot Entry</value>
   </data>
   <data name="VmSpacetimeService_NodeLabelOrigin" xml:space="preserve">
-    <value>Origin</value>
+    <value>Root Checkpoint</value>
   </data>
   <data name="VmSpacetimeService_NodeLabelCurrent" xml:space="preserve">
-    <value>Current</value>
+    <value>Now</value>
   </data>
   <data name="VmSpacetimeService_ErrLookupFailed" xml:space="preserve">
-    <value>Spacetime lookup failed: {0}</value>
+    <value>Checkpoint lookup failed: {0}</value>
   </data>
   <data name="VmSpacetimeService_LogWormholeDisk" xml:space="preserve">
-    <value>[Wormhole] Wormhole disk: {0}</value>
+    <value>[Mount] Mounted Checkpoint Disk: {0}</value>
   </data>
   <data name="VmSpacetimeService_LogWormholeMarkedOk" xml:space="preserve">
-    <value>[Wormhole] Marked successfully: {0}</value>
+    <value>[Mount] Marked successfully: {0}</value>
   </data>
   <data name="VmSpacetimeService_LogWormholeDetectFailed" xml:space="preserve">
-    <value>[Wormhole] Detection failed: {0}</value>
+    <value>[Mount] Detection failed: {0}</value>
   </data>
   <data name="VmSpacetimeService_ErrWormholeAlreadyExists" xml:space="preserve">
-    <value>A wormhole already exists in the current spacetime. Please close the existing wormhole before opening a new one, or a spacetime paradox will occur.</value>
+    <value>A Checkpoint Disk is already mounted. Unmount the existing one before mounting a new one, otherwise a conflict will occur.</value>
   </data>
   <data name="VmSpacetimeService_ErrParentChainNode" xml:space="preserve">
-    <value>This node is a parent-chain node of the current spacetime. Opening a wormhole would cause a spacetime paradox.</value>
+    <value>This checkpoint is the parent of the current state; mounting its disk would cause a conflict.</value>
   </data>
   <data name="VmSpacetimeService_ErrOnlySnapshotNode" xml:space="preserve">
-    <value>Wormholes can only be opened on snapshot nodes.</value>
+    <value>Checkpoint disks can only be mounted on checkpoint nodes.</value>
   </data>
   <data name="VmSpacetimeService_ErrSnapshotPathInvalid" xml:space="preserve">
-    <value>Snapshot disk path is invalid.</value>
+    <value>Checkpoint disk path is invalid.</value>
   </data>
   <data name="VmSpacetimeService_ErrNodeHasWormhole" xml:space="preserve">
-    <value>This node already has an active wormhole.</value>
+    <value>This checkpoint disk is already mounted.</value>
   </data>
   <data name="VmSpacetimeService_ErrCannotDetermineDiskDir" xml:space="preserve">
     <value>Unable to determine the disk directory.</value>
@@ -2521,19 +2521,19 @@ The existing NAT switch is: '{0}'</value>
     <value>Failed to create temporary differencing disk: {0}</value>
   </data>
   <data name="VmSpacetimeService_MsgWormholeOpened" xml:space="preserve">
-    <value>Wormhole opened</value>
+    <value>Checkpoint disk mounted</value>
   </data>
   <data name="VmSpacetimeService_ErrSpacetimeException" xml:space="preserve">
-    <value>Spacetime exception: {0}</value>
+    <value>Checkpoint disk exception: {0}</value>
   </data>
   <data name="VmSpacetimeService_ErrNoActiveWormhole" xml:space="preserve">
-    <value>This node has no active wormhole.</value>
+    <value>This checkpoint disk is not mounted.</value>
   </data>
   <data name="VmSpacetimeService_MsgWormholeClosed" xml:space="preserve">
-    <value>Wormhole closed. Timeline restored to normal.</value>
+    <value>Checkpoint disk unmounted</value>
   </data>
   <data name="VmSpacetimeService_ErrCloseWormholeException" xml:space="preserve">
-    <value>Exception while closing wormhole: {0}</value>
+    <value>Unmount Checkpoint Disk exception: {0}</value>
   </data>
   <data name="VmSpacetimeService_ErrWmiMgmtSvcNotFound" xml:space="preserve">
     <value>WMI management service not found</value>
@@ -2548,46 +2548,46 @@ The existing NAT switch is: '{0}'</value>
     <value>Rename service exception: {0}</value>
   </data>
   <data name="VmSpacetimeService_ErrOnlyHistoricalNode" xml:space="preserve">
-    <value>Can only travel to historical snapshot points.</value>
+    <value>Can only apply a historical checkpoint.</value>
   </data>
   <data name="VmSpacetimeService_MsgTravelInitiated" xml:space="preserve">
-    <value>Travel initiated, restoring running state...</value>
+    <value>Applying checkpoint, restoring running state...</value>
   </data>
   <data name="VmSpacetimeService_MsgTravelSucceeded" xml:space="preserve">
-    <value>Travel succeeded. VM has returned to the specified spacetime point (powered off).</value>
+    <value>Checkpoint applied. VM has been restored to the specified checkpoint (powered off).</value>
   </data>
   <data name="VmSpacetimeService_ErrTravelFailed" xml:space="preserve">
-    <value>Travel failed: {0}</value>
+    <value>Apply Checkpoint failed: {0}</value>
   </data>
   <data name="VmSpacetimeService_ErrVmCarrierNotFound" xml:space="preserve">
     <value>Specified VM carrier not found.</value>
   </data>
   <data name="VmSpacetimeService_ErrSpacetimeCollapse" xml:space="preserve">
-    <value>Spacetime collapse: {0}</value>
+    <value>Create Checkpoint failed: {0}</value>
   </data>
   <data name="VmSpacetimeService_MsgAnchorSet" xml:space="preserve">
-    <value>Spacetime anchor set.</value>
+    <value>Checkpoint created</value>
   </data>
   <data name="VmSpacetimeService_ErrOriginCurrentNoAnnihilate" xml:space="preserve">
-    <value>Origin and current nodes cannot be annihilated.</value>
+    <value>Root Checkpoint and current node cannot be deleted.</value>
   </data>
   <data name="VmSpacetimeService_MsgAnnihilated" xml:space="preserve">
-    <value>Spacetime branch fully annihilated.</value>
+    <value>Checkpoint subtree deleted</value>
   </data>
   <data name="VmSpacetimeService_ErrAnnihilateFailed" xml:space="preserve">
-    <value>Annihilation failed: {0}</value>
+    <value>Delete Checkpoint Subtree failed: {0}</value>
   </data>
   <data name="VmSpacetimeService_ErrOriginCurrentNoConverge" xml:space="preserve">
-    <value>Origin and current nodes cannot be converged.</value>
+    <value>Root Checkpoint and current node cannot be deleted.</value>
   </data>
   <data name="VmSpacetimeService_MsgConverging" xml:space="preserve">
-    <value>Converging spacetime...</value>
+    <value>Deleting checkpoint...</value>
   </data>
   <data name="VmSpacetimeService_ErrConvergeFailed" xml:space="preserve">
-    <value>Convergence failed: {0}</value>
+    <value>Delete Checkpoint failed: {0}</value>
   </data>
   <data name="VmSpacetimeService_LogReadCheckpointFailed" xml:space="preserve">
-    <value>[Spacetime] Failed to read checkpoint state: {0}</value>
+    <value>[Checkpoint] Failed to read checkpoint state: {0}</value>
   </data>
   <data name="VmSpacetimeService_ErrVmNotFound" xml:space="preserve">
     <value>Virtual machine not found</value>
@@ -2605,10 +2605,10 @@ The existing NAT switch is: '{0}'</value>
     <value>Operation exception: {0}</value>
   </data>
   <data name="VmSpacetimeService_LogSnapshotScreenCleaned" xml:space="preserve">
-    <value>[Spacetime] Snapshot screenshot cleaned: {0}</value>
+    <value>[Checkpoint] Checkpoint screenshot cleaned: {0}</value>
   </data>
   <data name="VmSpacetimeService_LogCleanScreenFailed" xml:space="preserve">
-    <value>[Spacetime] Failed to clean screenshot: {0}</value>
+    <value>[Checkpoint] Failed to clean checkpoint screenshot: {0}</value>
   </data>
   <data name="VmMmio_LogFinalResult" xml:space="preserve">
     <value>[MMIO] Final calculation result:</value>
@@ -2728,28 +2728,28 @@ The existing NAT switch is: '{0}'</value>
     <value>Retrieval failed</value>
   </data>
   <data name="VmPage_MsgSpacetimeCreated2" xml:space="preserve">
-    <value>Spacetime created successfully</value>
+    <value>Checkpoint created successfully</value>
   </data>
   <data name="VmPage_MsgTraveledTo2" xml:space="preserve">
-    <value>Traveled to spacetime: {0}</value>
+    <value>Checkpoint applied: {0}</value>
   </data>
   <data name="VmPage_MsgSpacetimeAnnihilated2" xml:space="preserve">
-    <value>This spacetime has been annihilated.</value>
+    <value>Checkpoint subtree deleted</value>
   </data>
   <data name="VmPage_MsgConnectedTo2" xml:space="preserve">
-    <value>Connected to spacetime "{0}"</value>
+    <value>Checkpoint disk mounted: {0}</value>
   </data>
   <data name="VmPage_ErrOpenFailed4" xml:space="preserve">
-    <value>Failed to open</value>
+    <value>Failed to mount</value>
   </data>
   <data name="VmPage_MsgTimelineRestored2" xml:space="preserve">
-    <value>Timeline restored to normal</value>
+    <value>Checkpoint disk unmounted</value>
   </data>
   <data name="VmPage_ErrCloseFailed2" xml:space="preserve">
-    <value>Failed to close</value>
+    <value>Failed to unmount</value>
   </data>
   <data name="VmPage_MsgSpacetimeConverged2" xml:space="preserve">
-    <value>Spacetime converged to the previous node</value>
+    <value>Checkpoint deleted and merged into parent</value>
   </data>
   <data name="VmPage_MsgRollingBackGpu2" xml:space="preserve">
     <value>Rolling back GPU allocation...</value>
@@ -2788,10 +2788,10 @@ The existing NAT switch is: '{0}'</value>
     <value>Boot Order and Device List</value>
   </data>
   <data name="VmDashboard_DescSpacetime" xml:space="preserve">
-    <value>Spacetime</value>
+    <value>Checkpoint</value>
   </data>
   <data name="VmDashboardView_SnapshotAndSpacetime" xml:space="preserve">
-    <value>Snapshot Management and Spacetime Travel</value>
+    <value>Snapshot Management and Checkpoints</value>
   </data>
   <data name="VmRAMSettings_LabelMemMappingMode" xml:space="preserve">
     <value>Memory Mapping Mode</value>
@@ -2902,7 +2902,7 @@ The existing NAT switch is: '{0}'</value>
     <value>Allow the VM operating system to request pinning or unpinning of GPA ranges at runtime</value>
   </data>
   <data name="VmSpacetimeSettings_TitleMgmt" xml:space="preserve">
-    <value>Spacetime Management</value>
+    <value>Checkpoints</value>
   </data>
   <data name="VmSpacetimeSettings_LabelCheckpoint" xml:space="preserve">
     <value>Checkpoint</value>
@@ -2914,49 +2914,49 @@ The existing NAT switch is: '{0}'</value>
     <value>Syncing...</value>
   </data>
   <data name="VmSpacetimeSettings_LabelDetails" xml:space="preserve">
-    <value>Spacetime Details</value>
+    <value>Checkpoint Details</value>
   </data>
   <data name="VmSpacetimeSettings_MsgNoAnchor" xml:space="preserve">
-    <value>No anchor selected</value>
+    <value>No checkpoint selected</value>
   </data>
   <data name="VmSpacetimeSettings_LabelAction" xml:space="preserve">
     <value>Action</value>
   </data>
   <data name="VmSpacetimeSettings_TypeContinuous" xml:space="preserve">
-    <value>Continuous Spacetime</value>
+    <value>Standard Checkpoint</value>
   </data>
   <data name="VmSpacetimeSettings_DescContinuous" xml:space="preserve">
     <value>Save disk and memory state</value>
   </data>
   <data name="VmSpacetimeSettings_TypeStatic" xml:space="preserve">
-    <value>Static Spacetime</value>
+    <value>Production Checkpoint</value>
   </data>
   <data name="VmSpacetimeSettings_DescStatic" xml:space="preserve">
     <value>Save disk state</value>
   </data>
   <data name="VmSpacetimeSettings_BtnCreate" xml:space="preserve">
-    <value>Create Spacetime</value>
+    <value>Create Checkpoint</value>
   </data>
   <data name="VmSpacetimeSettings_StateWormholeActive" xml:space="preserve">
-    <value>Wormhole Interfering</value>
+    <value>Checkpoint Disk Mounted</value>
   </data>
   <data name="VmSpacetimeSettings_BtnCloseWormhole" xml:space="preserve">
-    <value>Close Wormhole</value>
+    <value>Unmount Checkpoint Disk</value>
   </data>
   <data name="VmSpacetimeSettings_BtnTravel" xml:space="preserve">
-    <value>Travel</value>
+    <value>Apply Checkpoint</value>
   </data>
   <data name="VmSpacetimeSettings_BtnOpenWormhole" xml:space="preserve">
-    <value>Open Wormhole</value>
+    <value>Mount Checkpoint Disk</value>
   </data>
   <data name="VmSpacetimeSettings_BtnConverge" xml:space="preserve">
-    <value>Spacetime Convergence</value>
+    <value>Delete Checkpoint</value>
   </data>
   <data name="VmSpacetimeSettings_BtnDelete" xml:space="preserve">
-    <value>Delete</value>
+    <value>Delete Checkpoint Subtree</value>
   </data>
   <data name="VmSpacetimeSettings_DlgExportTitle" xml:space="preserve">
-    <value>Export Spacetime Topology Map</value>
+    <value>Export Checkpoint Topology Map</value>
   </data>
   <data name="VmSpacetimeSettings_DlgExportFilter" xml:space="preserve">
     <value>PNG Image|*.png</value>
@@ -3169,7 +3169,7 @@ The existing NAT switch is: '{0}'</value>
     <value>Error: {0}</value>
   </data>
   <data name="VmSpacetimeSettings_HintCloseWormholeFirst" xml:space="preserve">
-    <value>A wormhole is open — close it before you can create / delete / converge spacetimes.</value>
+    <value>A Checkpoint Disk is mounted — unmount it before you can create / delete / merge checkpoints.</value>
   </data>
   <data name="Cpu_ApicMode" xml:space="preserve">
     <value>APIC Mode</value>
