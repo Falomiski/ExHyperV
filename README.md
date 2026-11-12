@@ -642,40 +642,40 @@ Storm Threshold: Limits the number of broadcast/multicast packets the VM is allo
 Generation 1 virtual machines support four fixed boot entry types: DVD Drive, Floppy Disk, Network (PXE), and Hard Drive.
 
 Generation 2 virtual machines are based on UEFI firmware, and boot entries come from actually attached hardware devices, including SCSI hard drives, SCSI optical drives, network adapters (PXE), and the Windows Boot Manager. Boot order is persistently stored in the `.vmgs` file corresponding to the virtual machine. This file has an internal simulated GPT disk structure, fixed at 4097 sectors in size—equivalent to the NVRAM chip on a physical machine—and is used to store firmware state such as Secure Boot certificates and boot order.
-### Spacetime
+### Checkpoints
 >[!NOTE]
 > Manages the virtual machine's checkpoints.
 
-Displays the complete timeline of the virtual machine in a tree structure. Each Spacetime represents a historical state, and the lines between Spacetimes indicate derivation relationships. Click a Spacetime to view details and perform operations. Use the export button to save the current topology diagram as an image file.
+Displays the complete checkpoints of the virtual machine in a tree structure. Each checkpoint represents a historical state, and the lines between checkpoints indicate derivation relationships. Click a checkpoint to view details and perform operations. Use the export button to save the current topology diagram as an image file.
 
-The checkpoint toggle at the top controls whether new Spacetimes can be created. Disabling it still allows viewing and operating existing Spacetimes.
+The checkpoint toggle at the top controls whether new checkpoints can be created. Disabling it still allows viewing and operating existing checkpoints.
 
-#### Spacetime Types
-- **Origin**: The initial state of the virtual machine; the root node of the entire tree.
-- **Snapshot**: A Spacetime generated each time a state is saved; can be renamed.
-- **Current**: The current state of the virtual machine; always located at the end of the tree.
+#### Checkpoint Types
+- **Root Checkpoint**: The initial state of the VM; the root node of the entire tree.
+- **Checkpoint**: A checkpoint generated each time a state is saved; can be renamed.
+- **Now**: The current state of the VM; always located at the end of the tree.
 
-#### Create Spacetime
-Two types of snapshot Spacetimes are available:
-- **Continuous Spacetime**: Equivalent to a standard checkpoint. Saves both disk and memory states, allowing complete restoration of a running virtual machine.
-- **Static Spacetime**: Equivalent to a production checkpoint. Saves only the disk state; the virtual machine does not need to be running to create one, and the file size is smaller.
+#### Create Checkpoint
+Two types of checkpoints are available:
+- **Standard Checkpoint**: Saves both disk and memory states, allowing complete restoration of a running virtual machine.
+- **Production Checkpoint**: Saves only the disk state; the virtual machine does not need to be running to create one, and the file size is smaller.
 
-#### Time Jump
-Switches the virtual machine to the selected Spacetime. All modifications in the current Spacetime will be lost. All open Wormholes are automatically closed before jumping.
+#### Apply Checkpoint
+Restores the VM to the selected checkpoint. All modifications in the current state will be lost. All mounted Checkpoint Disks are automatically unmounted before applying.
 
-#### Convergence
-Merges the selected Spacetime into its parent, without affecting the topology structure with other Spacetimes.
+#### Delete Checkpoint
+Deletes the selected checkpoint and merges its data into the parent, without affecting the topology of other checkpoints.
 
-#### Delete
-Deletes the selected Spacetime and all its child Spacetimes.
+#### Delete Checkpoint Subtree
+Deletes the selected checkpoint and all its child checkpoints.
 
-#### Parallel Universe
-Creates an independent new virtual machine instance based on the selected Spacetime. Feature under development.
+#### Clone Virtual Machine
+Creates an independent new virtual machine instance based on the selected checkpoint. Feature under development.
 
-#### Wormhole
-Mounts the disk of the selected Spacetime to the currently running virtual machine without making a Time Jump. All modifications to the mounted disk will not affect the selected Spacetime. Only one Wormhole can be open at a time.
+#### Mount Checkpoint Disk
+Mounts the disk of the selected checkpoint to the currently running virtual machine without applying a checkpoint. All modifications to the mounted disk will not affect the selected checkpoint. Only one Checkpoint Disk can be mounted at a time.
 
-While a Wormhole is open for a selected Spacetime, no other operations can be performed on that Spacetime.
+While a Checkpoint Disk is mounted for a selected checkpoint, no other operations can be performed on that checkpoint.
 
 ---
 ### PCIe Passthrough
