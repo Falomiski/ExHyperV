@@ -365,7 +365,7 @@
                Command="{Binding CloseWormholeCommand}">
                                 <StackPanel Orientation="Horizontal">
                                     <ui:SymbolIcon Symbol="LinkDismiss24" FontSize="16"/>
-                                    <TextBlock Text="{x:Static properties:Resources.VmSpacetimeSettings_BtnCloseWormhole}" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                                    <TextBlock Text="{x:Static properties:Resources.VmSpacetimeSettings_BtnCloseWormhole}" VerticalAlignment="Center" Margin="10,0,0,0" TextWrapping="Wrap"/>
                                 </StackPanel>
                             </ui:Button>
                         </StackPanel>
@@ -390,21 +390,21 @@
                Padding="10,8" Command="{Binding TeleportCommand}">
                                 <StackPanel Orientation="Horizontal">
                                     <ui:SymbolIcon Symbol="PersonRunning20" FontSize="16"/>
-                                    <TextBlock Text="{x:Static properties:Resources.VmSpacetimeSettings_BtnTravel}" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                                    <TextBlock Text="{x:Static properties:Resources.VmSpacetimeSettings_BtnTravel}" VerticalAlignment="Center" Margin="10,0,0,0" TextWrapping="Wrap"/>
                                 </StackPanel>
                             </ui:Button>
                             <ui:Button Margin="0,0,0,6" HorizontalAlignment="Stretch" HorizontalContentAlignment="Left"
                Padding="10,8" Command="{Binding OpenWormholeCommand}">
                                 <StackPanel Orientation="Horizontal">
                                     <ui:SymbolIcon Symbol="Link24" FontSize="16"/>
-                                    <TextBlock Text="{x:Static properties:Resources.VmSpacetimeSettings_BtnOpenWormhole}" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                                    <TextBlock Text="{x:Static properties:Resources.VmSpacetimeSettings_BtnOpenWormhole}" VerticalAlignment="Center" Margin="10,0,0,0" TextWrapping="Wrap"/>
                                 </StackPanel>
                             </ui:Button>
                             <ui:Button Margin="0,0,0,6" HorizontalAlignment="Stretch" HorizontalContentAlignment="Left"
                Padding="10,8" Command="{Binding ConvergenceCommand}">
                                 <StackPanel Orientation="Horizontal">
                                     <ui:SymbolIcon Symbol="ArrowReply24" FontSize="16"/>
-                                    <TextBlock Text="{x:Static properties:Resources.VmSpacetimeSettings_BtnConverge}" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                                    <TextBlock Text="{x:Static properties:Resources.VmSpacetimeSettings_BtnConverge}" VerticalAlignment="Center" Margin="10,0,0,0" TextWrapping="Wrap"/>
                                 </StackPanel>
                             </ui:Button>
                             <ui:Button HorizontalAlignment="Stretch" HorizontalContentAlignment="Left"
@@ -416,7 +416,7 @@
                                 </ui:Button.Style>
                                 <StackPanel Orientation="Horizontal">
                                     <ui:SymbolIcon Symbol="Delete24" FontSize="16"/>
-                                    <TextBlock Text="{x:Static properties:Resources.VmSpacetimeSettings_BtnDelete}" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                                    <TextBlock Text="{x:Static properties:Resources.VmSpacetimeSettings_BtnDelete}" VerticalAlignment="Center" Margin="10,0,0,0" TextWrapping="Wrap"/>
                                 </StackPanel>
                             </ui:Button>
                         </StackPanel>

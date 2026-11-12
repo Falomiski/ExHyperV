@@ -2569,7 +2569,7 @@
     <value>检查点已创建</value>
   </data>
   <data name="VmSpacetimeService_ErrOriginCurrentNoAnnihilate" xml:space="preserve">
-    <value>根检查点与当前节点不可删除</value>
+    <value>根检查点与现在节点不可删除检查点子树</value>
   </data>
   <data name="VmSpacetimeService_MsgAnnihilated" xml:space="preserve">
     <value>检查点子树已删除</value>
@@ -2578,7 +2578,7 @@
     <value>删除检查点子树失败: {0}</value>
   </data>
   <data name="VmSpacetimeService_ErrOriginCurrentNoConverge" xml:space="preserve">
-    <value>根检查点与当前节点不可删除</value>
+    <value>根检查点与现在节点不可删除检查点</value>
   </data>
   <data name="VmSpacetimeService_MsgConverging" xml:space="preserve">
     <value>正在删除检查点...</value>

@@ -2569,7 +2569,7 @@ The existing NAT switch is: '{0}'</value>
     <value>Checkpoint created</value>
   </data>
   <data name="VmSpacetimeService_ErrOriginCurrentNoAnnihilate" xml:space="preserve">
-    <value>Root Checkpoint and current node cannot be deleted.</value>
+    <value>The Root Checkpoint and the current (Now) node cannot be deleted as a checkpoint subtree.</value>
   </data>
   <data name="VmSpacetimeService_MsgAnnihilated" xml:space="preserve">
     <value>Checkpoint subtree deleted</value>
@@ -2578,7 +2578,7 @@ The existing NAT switch is: '{0}'</value>
     <value>Delete Checkpoint Subtree failed: {0}</value>
   </data>
   <data name="VmSpacetimeService_ErrOriginCurrentNoConverge" xml:space="preserve">
-    <value>Root Checkpoint and current node cannot be deleted.</value>
+    <value>The Root Checkpoint and the current (Now) node cannot be deleted as a checkpoint.</value>
   </data>
   <data name="VmSpacetimeService_MsgConverging" xml:space="preserve">
     <value>Deleting checkpoint...</value>
