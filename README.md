@@ -646,7 +646,7 @@ Generation 2 virtual machines are based on UEFI firmware, and boot entries come 
 >[!NOTE]
 > Manages the virtual machine's checkpoints.
 
-Displays the complete checkpoints of the virtual machine in a tree structure. Each checkpoint represents a historical state, and the lines between checkpoints indicate derivation relationships. Click a checkpoint to view details and perform operations. Use the export button to save the current topology diagram as an image file.
+Displays the checkpoint history of the virtual machine in a tree structure. Each checkpoint represents a historical state, and the lines between checkpoints indicate derivation relationships. Click a checkpoint to view details and perform operations. Use the export button to save the current topology diagram as an image file.
 
 The checkpoint toggle at the top controls whether new checkpoints can be created. Disabling it still allows viewing and operating existing checkpoints.
 

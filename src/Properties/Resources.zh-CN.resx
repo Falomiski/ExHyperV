@@ -2791,7 +2791,7 @@
     <value>检查点</value>
   </data>
   <data name="VmDashboardView_SnapshotAndSpacetime" xml:space="preserve">
-    <value>快照管理与检查点</value>
+    <value>检查点管理</value>
   </data>
   <data name="VmRAMSettings_LabelMemMappingMode" xml:space="preserve">
     <value>内存映射模式</value>

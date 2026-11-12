@@ -2791,7 +2791,7 @@ The existing NAT switch is: '{0}'</value>
     <value>Checkpoint</value>
   </data>
   <data name="VmDashboardView_SnapshotAndSpacetime" xml:space="preserve">
-    <value>Snapshot Management and Checkpoints</value>
+    <value>Checkpoint Management</value>
   </data>
   <data name="VmRAMSettings_LabelMemMappingMode" xml:space="preserve">
     <value>Memory Mapping Mode</value>
