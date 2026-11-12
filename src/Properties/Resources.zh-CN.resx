@@ -3376,7 +3376,7 @@
     <value>失效的存储介质</value>
   </data>
   <data name="VmDelete_DestroyVerifyFail" xml:space="preserve">
-    <value>引擎报成功但虚拟机 '{0}' 仍在册（可能是保存态/受 TPM 保护，未能彻底销毁）</value>
+    <value>Hyper-V 报告成功但虚拟机 '{0}' 仍在册（可能是保存态/受 TPM 保护，未能彻底销毁）</value>
   </data>
   <data name="VmDelete_TurnOffFail" xml:space="preserve">
     <value>虚拟机 '{0}' 未能进入关机状态</value>
@@ -3393,7 +3393,7 @@
     <value>无法确定虚拟机“{0}”的配置目录，因此不能保留可重新导入的完整配置。</value>
   </data>
   <data name="VmDelete_RestoreFailed" xml:space="preserve">
-    <value>虚拟机已从引擎注销，但可重新导入的配置未能恢复。恢复副本：{0}
+    <value>虚拟机已从 Hyper-V 注销，但可重新导入的配置未能恢复。恢复副本：{0}
 {1}</value>
   </data>
   <data name="GpuRepair_VmcxNotFound" xml:space="preserve">

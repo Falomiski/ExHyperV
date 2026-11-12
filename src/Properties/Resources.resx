@@ -3376,7 +3376,7 @@ Remove them from storage and retry? Cancel to re-plug the device and try again.<
     <value>a failed storage device</value>
   </data>
   <data name="VmDelete_DestroyVerifyFail" xml:space="preserve">
-    <value>The engine reported success but VM '{0}' is still registered (may be in a saved state or TPM-protected, and was not fully destroyed).</value>
+    <value>Hyper-V reported success but VM '{0}' is still registered (may be in a saved state or TPM-protected, and was not fully destroyed).</value>
   </data>
   <data name="VmDelete_TurnOffFail" xml:space="preserve">
     <value>VM '{0}' could not be turned off.</value>
